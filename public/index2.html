@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+  </head>
+  <body>
+    <div>
+      调用 history对象的forward()方法 和 go(1)方法 在 浏览历史 之中 前进移动
+    </div>
+    
+    <a href="./list.html">点击我去往列表页</a>
+    <button>前进</button>
+
+    <script>
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", function () {
+        // history.forward();  //后退
+        history.go(1); //同上
+      });
+    </script>
+
+  </body>
+</html>
